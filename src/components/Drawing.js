@@ -3,7 +3,7 @@ import Paper from 'material-ui/Paper'
 
 export default class Drawing extends React.Component {
 
-    generateMaze = (solution) => {
+    generateMaze = (solution) => {        
         let finalPath = '';
         for (var i in solution.maze) {
                 let str = '';
@@ -13,9 +13,9 @@ export default class Drawing extends React.Component {
                     if (mazeCh !== 'S' && solution.solutionPath[j + ',' + i]) {
                         str += '<span style="height:15px;width:15px;background-color:blue;color:white;display:inline-block">@</span>';
                     } else {
-                        if (mazeCh == '#') {
+                        if (mazeCh === '#') {
                             str += '<span style="height:15px;width:15px;background-color:black;color:white;display:inline-block">'+mazeCh+'</span>';
-                        } else if (mazeCh == ' ') {
+                        } else if (mazeCh === ' ') {
                             str += '<span <span style="height:15px;width:15px;background-color:black;color:white;display:inline-block">'+mazeCh+'</span>';
                         } else if (mazeCh === 'S' || mazeCh === 'F') {
                             str += '<span <span style="height:15px;width:15px;background-color:red;display:inline-block">'+mazeCh+'</span>';

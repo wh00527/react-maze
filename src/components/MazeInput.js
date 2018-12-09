@@ -43,7 +43,7 @@ class MazeInput extends React.Component {
         return (
             <React.Fragment>
                 <Grid container justify='center' className={classes.paddingB}>
-                    <Grid item xs={12} md={12}>
+                    <Grid item xs={11}>
                         <Paper elevation={8} square className={classes.padding}>
                             <Input
                                 value={mazeIn}
