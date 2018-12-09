@@ -4,7 +4,7 @@ import Paper from 'material-ui/Paper'
 export default class Drawing extends React.Component {
 
     generateMaze = (solution) => {        
-        let finalPath = '';
+        let finalPath = '';        
         for (var i in solution.maze) {
                 let str = '';
                 str += '<p style="margin:0 auto">'

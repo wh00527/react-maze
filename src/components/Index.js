@@ -16,7 +16,8 @@ class Index extends React.Component {
 
     async handleSolve(mazeText) {
         try {            
-            const response = solver.getSolution(mazeText);        
+            const mazeObj = new solver();
+            const response = mazeObj.getSolution(mazeText);            
             //console.log(response);
             this.setState({
                 showSolution: true,
@@ -32,7 +33,7 @@ class Index extends React.Component {
         const {classes} = this.props
         const {showSolution, mazeSolution} = this.state
         const display = showSolution ?
-            <Solution handleBack={this.handleBack} mazeSolution={mazeSolution}/> :
+            <Solution handleBack={this.handleBack} solution={mazeSolution}/> :
             <MazeInput handleSolve={this.handleSolve.bind(this)}/>
 
         return (

@@ -2,7 +2,6 @@
   "name": "react-maze",
   "version": "1.0.0",
   "description": "react maze",
-  "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -24,7 +23,7 @@
     "url": "https://github.com/wh00527/react-maze/issues"
   },
   "homepage": "https://github.com/wh00527/react-maze#readme",
-  "dependencies": {    
+  "dependencies": {
     "@babel/runtime": "7.0.0-beta.55",
     "lodash": "^4.17.5",
     "material-ui": "^1.0.0-beta.42",
@@ -33,17 +32,13 @@
     "react-scripts": "1.1.4"
   },
   "devDependencies": {
+    "@babel/plugin-transform-runtime": "7.2.0",
     "jest": "23.6.0"
   },
   "jest": {
     "verbose": false,
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,mjs}"
-    ],
-    "setupFiles": [
-      "<rootDir>/config/polyfills.js",
-      "<rootDir>/config/jest.js",
-      "<rootDir>/config/enzyme.js"
     ],
     "testMatch": [
       "<rootDir>/src/**/__tests__/**/*.{js,jsx,mjs}",
@@ -53,7 +48,6 @@
     "testURL": "http://localhost",
     "transform": {
       "^.+\\.(js|jsx|mjs)$": "<rootDir>/node_modules/babel-jest",
-      "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
       "^(?!.*\\.(js|jsx|mjs|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
     },
     "transformIgnorePatterns": [
