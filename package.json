@@ -1,0 +1,38 @@
+{
+  "name": "react-maze",
+  "version": "1.0.0",
+  "description": "react maze",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "jest",
+    "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wh00527/react-maze.git"
+  },
+  "keywords": [
+    "react",
+    "maze",
+    "lodash"
+  ],
+  "author": "Kevin Wang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wh00527/react-maze/issues"
+  },
+  "homepage": "https://github.com/wh00527/react-maze#readme",
+  "dependencies": {    
+    "@babel/runtime": "7.0.0-beta.55",
+    "lodash": "^4.17.5",
+    "material-ui": "^1.0.0-beta.42",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-scripts": "1.1.4"
+  },
+  "devDependencies": {
+    "jest": "23.6.0"
+  }
+}
